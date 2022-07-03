@@ -1,52 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" type="text/css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Home | senyumpanda</title>
-  </head>
 
-  <body>
-    <!-- Navbar -->
-    <nav>
-      <div class="bungkus-nav">
-        <div class="logo">
-          <h2>SENYUMPANDA</h2>
-        </div>
-        <div class="list-utama">
-          <ul>
-            <li class="aktif"><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="about.html">About</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- Akhir Navbar -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>senyumpanda | Portfolio</title>
+</head>
 
-    <!-- Home -->
-    <section class="home">
-      <div class="container">
-        <div class="sambutan">
-          <h2>Selamat Datang</h2>
-          <p>Halo,</p>
-          <p>Saya Ilham Pandu Prasetyo</p>
+<body class="font-ubuntu selection:text-secondary_dark selection:bg-white">
+
+    <!-- Header Start -->
+    <header id="">
+        <div class="mx-auto border-b-2 border-dark">
+            <div class="container mx-auto">
+                <div class="flex flex-wrap justify-between">
+                    <div class="judul group">
+                        <h2
+                            class="text-xl mx-2 my-2 px-3 py-2 transition duration-500 cursor-default group-hover:animate-bounce hover:text-primary">
+                            <a href="">senyumpanda</a>
+                        </h2>
+                    </div>
+                    <div class="flex flex-wrap lg:static lg:block">
+                        <button type="button" id="hamburger" class="mr-4 lg:hidden">
+                            <span class="garis-hamburger origin-top-left transition duration-300"></span>
+                            <span class="garis-hamburger transition duration-300"></span>
+                            <span class="garis-hamburger origin-bottom-left transition duration-300"></span>
+                        </button>
+
+                        <nav id="nav-menu"
+                            class="hidden w-full max-w-[250px] mt-3 bg-white shadow-lg rounded-lg absolute top-20 right-5 md:z-[5] lg:block lg:static lg:mr-3 lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                            <ul class="text-center lg:flex lg:space-x-8">
+                                <li class="transition duration-500 my-3">
+                                    <a href="#profil"
+                                        class="text-base text-dark hover:border-b-2 border-b-primary hover:text-primary">
+                                        Profil
+                                    </a>
+                                </li>
+                                <li class="transition duration-500 my-3">
+                                    <a href="#projek"
+                                        class="text-base text-dark hover:border-b-2 border-b-primary hover:text-primary">
+                                        Projek
+                                    </a>
+                                </li>
+                                <li class="transition duration-500 my-3">
+                                    <a href="#kontak"
+                                        class="text-base text-dark hover:border-b-2 border-b-primary hover:text-primary">
+                                        Kontak
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="gambar">
-          <img src="https://image.freepik.com/free-vector/man-shows-gesture-great-idea_10045-637.jpg" alt="" />
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Start -->
+    <section id="profil" class="pt-32 pb-20">
+        <div class="pl-0 relative">
+            <div class="container flex flex-wrap justify-between md:mx-auto">
+                <div class="w-full pl-14 sm:pl-40 md:w-1/2 md:pt-20 md:pl-2 lg:pt-44 lg:pl-3 xl:pt-20 xl:pl-2">
+                    <h2 class="font-semibold text-md mb-3 sm:text-lg xl:text-xl">Hi, i'm</h2>
+                    <h1 class="text-3xl font-medium text-primary mb-3 sm:text-4xl lg:text-5xl xl:text-6xl xl:font-bold
+                    ">Ilham Pandu Prasetyo</h1>
+                    <h2 class="font-medium text-md sm:text-lg lg:text-lg">I'm interest in <span
+                            class="font-semibold text-secondary_dark">Data
+                            Scientist</span></h2>
+                    <div class="flex items-center mt-3">
+                        <!-- Instagram -->
+                        <a href="https://instagram.com/panduu.prstyo" target="_blank"
+                            class="w-12 h-12 rounded-full flex justify-center items-center border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                            <svg role="img" width="25" class="fill-current" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>Instagram</title>
+                                <path
+                                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+                            </svg>
+                        </a>
+
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/ilham.pandu.714/" target="_blank"
+                            class="w-12 h-12 rounded-full flex justify-center items-center border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                            <svg role="img" width="25" class="fill-current" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>Facebook</title>
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                    </div>
+                    <!-- <h2 class="font-medium text-md sm:text-lg lg:text-lg">Software Engineer & <span
+                            class="font-semibold text-secondary_dark">Data
+                            Scientist</span></h2> -->
+
+                    <!-- <div class="tbl-download mt-8 inline-block ">
+                        <a href="#"
+                            class="italic font-medium text-md transition duration-300 rounded-full text-white px-4 py-2 bg-secondary_dark hover:bg-primary">Download
+                            CV</a>
+                    </div> -->
+                </div>
+
+                <div class="pt-24 w-full md:p-0 md:pl-40 md:w-1/2">
+                    <div class="back relative md:pl-20 lg:pl-0 xl:pl-12 2xl:pl-0">
+                        <div
+                            class="kotak-2 bg-secondary_dark w-[263px] h-[335px] rounded-r-3xl rotate-[25deg] scale-[0.65] absolute z-[1] -translate-y-10 translate-x-10 sm:translate-x-48 md:scale-[0.6] md:-translate-x-44 md:-translate-y-16 lg:z-[-5] lg:-translate-x-6 lg:translate-y-10 xl:translate-x-2 xl:translate-y-0 xl:scale-[0.6] 2xl:translate-x-24 2xl:translate-y-2 2xl:scale-[0.65]">
+                        </div>
+                        <div
+                            class="kotak-1 bg-primary w-[315px] h-[369px] rounded-r-3xl rotate-[35deg] scale-[0.65] absolute z-[2] -translate-y-10 translate-x-10 sm:translate-x-48 md:scale-[0.6] md:-translate-x-44 md:-translate-y-16 lg:z-[-5] lg:-translate-x-6 lg:translate-y-10 xl:translate-x-2 xl:translate-y-0 xl:scale-[0.6] 2xl:translate-x-24 2xl:translate-y-2 2xl:scale-[0.65]">
+                        </div>
+                        <img src="img/me.png" alt="Ilham Pandu Prasetyo"
+                            class="absolute z-[3] w-[350px] -translate-y-24 scale-110 translate-x-10 sm:w-[500px] sm:scale-75 sm:translate-x-24 sm:-translate-y-40 md:scale-150 md:-translate-x-32 md:-translate-y-6 lg:z-[-5] lg:-translate-x-10 lg:-translate-y-10 xl:scale-105 xl:-translate-x-16 xl:-translate-y-40 2xl:scale-110 2xl:translate-x-2 2xl:-translate-y-48">
+                    </div>
+                </div>
+            </div>
         </div>
-        <p><a href="about.html" class="lebih">Selebihnya -></a></p>
-      </div>
     </section>
-    <!-- Akhir Home -->
-  </body>
+    <!-- Hero Section End -->
+
+    <!-- Projek Section Start -->
+    <section id="projek" class="mt-60 bg-secondary md:mt-8">
+        <div class="container mx-auto pt-10 text-white">
+            <div class="h-[820px] md:h-[620px]">
+                <div class="keterangan-projek w-full text-center mb-14 md:mb-16">
+                    <h3 class="text-2xl font-medium sm:text-4xl 2xl:text-5xl">Projek</h3>
+                    <!-- <p class="text-xs sm:text-sm">Silahkan Dilihat :)</p> -->
+                </div>
+
+                <div class="flex flex-wrap md:justify-between md:align-middle">
+                    <div class="w-full mb-10 md:w-1/2 md">
+                        <div
+                            class="w-72 border-2 border-secondary_dark mx-auto relative rounded-lg overflow-hidden group transition duration-300 hover:opacity-[0.6] md:w-[22rem] md:h-48">
+                            <img src="img/76.PNG" alt="" class="w-full h-48">
+                            <div
+                                class="w-2/3 mx-auto font-medium italic rounded-t-lg text-center p-2 bg-secondary_dark absolute left-14 transition duration-500 group-hover:-translate-y-10 group-hover:transition">
+                                <h3 class="">
+                                    <a href="https://github.com/senyumpanda/Seven-Six" target="_blank">
+                                        76 Tahun Merdeka
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full mb-10 md:w-1/2">
+                        <div
+                            class="w-72 border-2 border-secondary_dark mx-auto relative rounded-lg overflow-hidden group transition duration-300 hover:opacity-[0.6] md:w-[22rem] md:h-48">
+                            <img src="img/turbo.PNG" alt="" class="w-full h-48">
+                            <div
+                                class="w-2/3 mx-auto font-medium italic rounded-t-lg text-center p-2 bg-secondary_dark absolute left-14 transition duration-500 group-hover:-translate-y-10 group-hover:transition">
+                                <h3 class="">
+                                    <a href="https://github.com/senyumpanda/turbo_space" target="_blank">
+                                        Turbo Space
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full mb-10 md:w-1/2">
+                        <div
+                            class="w-72 border-2 border-secondary_dark mx-auto relative rounded-lg overflow-hidden group transition duration-300 hover:opacity-[0.6] md:w-[22rem] md:h-48">
+                            <img src="img/rent.jpg" alt="" class="w-full h-48">
+                            <div
+                                class="w-2/3 mx-auto font-medium italic rounded-t-lg text-center p-2 bg-secondary_dark absolute left-14 transition duration-500 group-hover:-translate-y-10 group-hover:transition">
+                                <h3 class="">
+                                    <a href="https://github.com/senyumpanda/RENT-CAR" target="_blank">
+                                        RENT-CAR
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projek Section End -->
+
+    <!-- Kontak Section Start -->
+    <section id="kontak" class="mt-16">
+        <div class="container mx-auto">
+            <div class="keterangan-projek w-full text-center mb-14 md:mb-16">
+                <h3 class="text-3xl font-medium sm:text-4xl 2xl:text-5xl">Kontak</h3>
+                <!-- <p class="text-xs sm:text-sm">Dapat Hubungi Saya di Bawah</p> -->
+            </div>
+
+            <!-- Peringan Start -->
+            <div id="sukses"
+                class="hidden w-96 h-14 px-3 mx-auto rounded-lg mb-3 bg-green-300 md:w-[36rem] xl:w-[40rem] md:px-5">
+                <div class="flex items-center justify-between">
+                    <div class="ket h-14 flex items-center">
+                        <h3 class="text-base">
+                            <span class="font-bold">Terima Kasih !</span>
+                            Pesan Anda sudah kami terima
+                        </h3>
+                    </div>
+
+                    <div id="tbl-x-sukses" class="cursor-pointer">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div id="gagal"
+                class="hidden w-96 h-14 px-3 mx-auto rounded-lg mb-3 bg-red-300 md:w-[36rem] xl:w-[40rem] md:px-5">
+                <div class="flex items-center justify-between">
+                    <div class="ket h-14 flex items-center">
+                        <h3 class="text-base">
+                            <span class="font-bold">Mohon maaf !</span>
+                            Pesan Anda gagal terkirim
+                        </h3>
+                    </div>
+
+                    <div id="tbl-x-gagal" class="cursor-pointer">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Peringatan End -->
+
+            <form action="" name="senyumpanda-form-kontak">
+                <div id="form-kontak" class="w-96 mx-auto md:w-[36rem] xl:w-[40rem]">
+                    <div class="input-label mb-8">
+                        <label for="nama" class="text-sm text-big_secondary">Nama</label>
+                        <input type="text" name="nama" id="nama"
+                            class="w-full h-10 p-2 text-sm block border-2 border-slate-900 rounded-md focus:outline-none focus:border-primary"
+                            autocomplete="off" required>
+                    </div>
+                    <div class="input-label mb-8">
+                        <label for="email" class="text-sm text-big_secondary">Email</label>
+                        <input type="email" name="email" id="email"
+                            class="w-full h-10 p-2 text-sm block border-2 border-slate-900 rounded-md focus:outline-none focus:border-primary"
+                            autocomplete="off" required>
+                    </div>
+                    <div class="input-label mb-8">
+                        <label for="deskripsi" class="text-sm text-big_secondary">Deskripsi</label>
+                        <textarea name="deskripsi" id="deskripsi" cols="30" rows="10"
+                            class="w-full p-2 text-sm block border-2 border-slate-900 rounded-md focus:outline-none focus:border-primary"
+                            autocomplete="off" required></textarea>
+                    </div>
+                    <div class="tbl-kirim mb-8 xl:flex xl:justify-end">
+                        <button id="satu" type="submit"
+                            class="w-full text-center capitalize bg-primary px-4 py-2 rounded-lg transition duration-300 hover:bg-secondary_dark xl:w-1/5 hover:text-white">
+                            kirim
+                        </button>
+                        <button id="dua" type="button"
+                            class="hidden w-full text-center capitalize bg-primary px-4 py-2 text-white rounded-lg transition duration-300 pointer-events-none opacity-50 xl:w-1/5 flex items-center justify-center">
+                            <span
+                                class="w-5 h-5 mr-3 xl:w-4 xl:h-4 border-2 border-t-secondary_dark rounded-full animate-spin"></span>
+                            proses...
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </section>
+    <!-- Kontak Section End -->
+
+    <!-- Footer Start -->
+    <footer id="footer">
+        <div class="h-[60px] border-2 border-dark text-center">
+            <p class="text-sm mt-4">&copy; Copyright 2022 - <a href="https://github.com/senyumpanda" target="_blank"
+                    class="text-primary transition hover:italic">senyumpanda</a></p>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script src="js/script.js"></script>
+    <script>
+        const scriptURL =
+            'https://script.google.com/macros/s/AKfycbwpO7vCLI6MGRHo4jihH33Kj0USNK1ZztB6ZBzukoU38bq6UncIi1QgoGk9mesRpw4ZRQ/exec'
+        const form = document.forms['senyumpanda-form-kontak']
+        const sukses = document.getElementById("sukses")
+        const gagal = document.getElementById("gagal")
+        const tbl_sukses = document.getElementById("tbl-x-sukses")
+        const tbl_gagal = document.getElementById("tbl-x-gagal")
+        const tbl_kirim = document.getElementById("satu")
+        const tbl_proses = document.getElementById("dua")
+
+        tbl_sukses.addEventListener("click", () => {
+            sukses.classList.toggle("hidden")
+        })
+
+        tbl_gagal.addEventListener("click", () => {
+            gagal.classList.toggle("hidden")
+        })
+
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+
+            // menampilkan tombol proses, menghilangkan tombol kirim
+            tbl_kirim.classList.toggle("hidden")
+            tbl_proses.classList.toggle("hidden")
+
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => {
+                    // menampilkan tombol kirim, menghilangkan tombol prose
+                    tbl_kirim.classList.toggle("hidden")
+                    tbl_proses.classList.toggle("hidden")
+
+                    // memunculkan peringatan sukses
+                    sukses.classList.toggle("hidden")
+
+                    // perubahan pesan peringatan -> terhapus setelah 2 detik berjalan
+                    setTimeout(() => {
+                        sukses.classList.toggle("hidden")
+                    }, 2000)
+
+                    // reset formnya
+                    form.reset()
+
+                    console.log('Success!', response)
+                })
+                .catch(error => {
+                    // memunculkan peringatan gagal
+                    gagal.classList.toggle("hidden")
+
+                    // perubahan pesan peringatan -> terhapus setelah 2 detik berjalan
+                    setTimeout(() => {
+                        gagal.classList.toggle("hidden")
+                    }, 2000)
+
+                    console.error('Error!', error.message)
+                })
+        })
+    </script>
+
+</body>
+
 </html>
