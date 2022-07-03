@@ -321,7 +321,7 @@
                     // perubahan pesan peringatan -> terhapus setelah 2 detik berjalan
                     setTimeout(() => {
                         sukses.classList.toggle("hidden")
-                    }, 2000)
+                    }, 5000)
 
                     // reset formnya
                     form.reset()
@@ -335,7 +335,7 @@
                     // perubahan pesan peringatan -> terhapus setelah 2 detik berjalan
                     setTimeout(() => {
                         gagal.classList.toggle("hidden")
-                    }, 2000)
+                    }, 5000)
 
                     console.error('Error!', error.message)
                 })
