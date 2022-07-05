@@ -18,10 +18,10 @@
 <body class="font-ubuntu selection:text-secondary_dark selection:bg-white">
 
     <!-- Header Start -->
-    <header id="">
-        <div class="mx-auto border-b-2 border-dark">
+    <header id="" class="bg-transparent absolute top-0 left-0 w-full items-center z-10">
+        <div class="mx-auto border-b-2 border-dark flex items-center">
             <div class="container mx-auto">
-                <div class="flex flex-wrap justify-between">
+                <div class="flex flex-wrap justify-between items-center">
                     <div class="judul group">
                         <h2
                             class="text-xl mx-2 my-2 px-3 py-2 transition duration-500 cursor-default group-hover:animate-bounce hover:text-primary">
@@ -36,7 +36,7 @@
                         </button>
 
                         <nav id="nav-menu"
-                            class="hidden w-full max-w-[250px] mt-3 bg-white shadow-lg rounded-lg absolute top-20 right-5 md:z-[5] lg:block lg:static lg:mr-3 lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                            class="hidden w-full max-w-[250px] mt-2 bg-white shadow-lg rounded-lg absolute top-20 right-5 md:z-[5] lg:block lg:static lg:mr-3 lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
                             <ul class="text-center lg:flex lg:space-x-8">
                                 <li class="transition duration-500 my-3">
                                     <a href="#profil"
@@ -67,7 +67,7 @@
     <!-- Header End -->
 
     <!-- Hero Section Start -->
-    <section id="profil" class="pt-32 pb-20">
+    <section id="profil" class="pt-52 pb-20 bg-white">
         <div class="pl-0 relative">
             <div class="container flex flex-wrap justify-between md:mx-auto">
                 <div class="w-full pl-8 sm:pl-20 md:w-1/2 md:pt-20 md:pl-6 lg:pt-44 lg:pl-3 xl:pt-20 xl:pl-2">
@@ -114,13 +114,13 @@
                 <div class="pt-24 w-full md:p-0 md:pl-32 md:w-1/2">
                     <div class="back relative md:pl-20 lg:pl-0 xl:pl-12 2xl:pl-0">
                         <div
-                            class="kotak-2 bg-secondary_dark w-[230px] h-[300px] rounded-r-3xl rotate-[25deg] scale-[0.55] absolute z-[1] -translate-y-10 translate-x-6 sm:translate-x-48 md:scale-[0.6] md:-translate-x-44 md:-translate-y-16 lg:z-[-5] lg:-translate-x-6 lg:translate-y-10 xl:translate-x-2 xl:translate-y-0 xl:scale-[0.6] 2xl:translate-x-24 2xl:translate-y-2 2xl:scale-[0.65]">
+                            class="kotak-2 bg-secondary_dark w-[230px] h-[300px] rounded-r-3xl rotate-[25deg] scale-[0.55] absolute z-[1] -translate-y-10 translate-x-6 sm:translate-x-48 md:scale-[0.6] md:-translate-x-32 md:-translate-y-0 lg:z-[5] lg:translate-x-4 lg:translate-y-10 xl:translate-x-12 xl:translate-y-0 xl:scale-[0.6] 2xl:translate-x-28 2xl:translate-y-0 2xl:scale-[0.65]">
                         </div>
                         <div
-                            class="kotak-1 bg-primary w-[250px] h-[310px] rounded-r-3xl rotate-[35deg] scale-[0.55] absolute z-[2] -translate-y-10 translate-x-6 sm:translate-x-48 md:scale-[0.6] md:-translate-x-44 md:-translate-y-16 lg:z-[-5] lg:-translate-x-6 lg:translate-y-10 xl:translate-x-2 xl:translate-y-0 xl:scale-[0.6] 2xl:translate-x-24 2xl:translate-y-2 2xl:scale-[0.65]">
+                            class="kotak-1 bg-primary w-[250px] h-[310px] rounded-r-3xl rotate-[35deg] scale-[0.55] absolute z-[2] -translate-y-10 translate-x-6 sm:translate-x-48 md:scale-[0.6] md:-translate-x-32 md:-translate-y-0 lg:z-[5] lg:translate-x-4 lg:translate-y-10 xl:translate-x-12 xl:translate-y-0 xl:scale-[0.6] 2xl:translate-x-28 2xl:translate-y-0 2xl:scale-[0.75]">
                         </div>
                         <img src="img/me.png" alt="Ilham Pandu Prasetyo"
-                            class="absolute z-[3] w-[350px] -translate-y-24 scale-90 translate-x-2 sm:w-[500px] sm:scale-75 sm:translate-x-24 sm:-translate-y-40 md:scale-150 md:-translate-x-32 md:-translate-y-6 lg:z-[-5] lg:-translate-x-10 lg:-translate-y-10 xl:scale-105 xl:-translate-x-16 xl:-translate-y-40 2xl:scale-110 2xl:translate-x-2 2xl:-translate-y-48">
+                            class="absolute z-[3] w-[350px] -translate-y-24 scale-90 translate-x-2 sm:w-[500px] sm:scale-75 sm:translate-x-24 sm:-translate-y-40 md:scale-150 md:-translate-x-32 md:-translate-y-6 lg:z-[5] lg:-translate-x-10 lg:-translate-y-10 xl:scale-105 xl:-translate-x-16 xl:-translate-y-40 2xl:scale-110 2xl:translate-x-2 2xl:-translate-y-48">
                     </div>
                 </div>
             </div>
@@ -189,7 +189,7 @@
     <!-- Projek Section End -->
 
     <!-- Kontak Section Start -->
-    <section id="kontak" class="mt-16">
+    <section id="kontak" class="mt-16 bg-white">
         <div class="container mx-auto">
             <div class="keterangan-projek w-full mx-auto text-center mb-14 md:mb-16">
                 <h3 class="text-2xl font-medium sm:text-4xl 2xl:text-5xl">Kontak</h3>
@@ -201,7 +201,7 @@
                 class="hidden w-96 h-14 px-3 mx-auto rounded-lg mb-3 bg-green-300 md:w-[36rem] xl:w-[40rem] md:px-5">
                 <div class="flex items-center justify-between">
                     <div class="ket h-14 flex items-center">
-                        <h3 class="text-base">
+                        <h3 class="text-base text-dark">
                             <span class="font-bold">Terima Kasih !</span>
                             Pesan Anda sudah kami terima
                         </h3>
@@ -218,7 +218,7 @@
                 <div class="flex items-center justify-between">
                     <div class="ket h-14 flex items-center">
                         <h3 class="text-base">
-                            <span class="font-bold">Mohon maaf !</span>
+                            <span class="font-bold text-dark">Mohon maaf !</span>
                             Pesan Anda gagal terkirim
                         </h3>
                     </div>
@@ -235,24 +235,24 @@
                     <div class="input-label mb-8">
                         <label for="nama" class="text-sm text-big_secondary">Nama</label>
                         <input type="text" name="nama" id="nama"
-                            class="w-full h-10 p-2 text-sm block border-2 border-slate-900 rounded-md focus:outline-none focus:border-primary"
+                            class="w-full h-10 p-2 text-sm text-dark block border-2 border-slate-900 rounded-md focus:outline-none focus:border-primary"
                             autocomplete="off" required>
                     </div>
                     <div class="input-label mb-8">
                         <label for="email" class="text-sm text-big_secondary">Email</label>
                         <input type="email" name="email" id="email"
-                            class="w-full h-10 p-2 text-sm block border-2 border-slate-900 rounded-md focus:outline-none focus:border-primary"
+                            class="w-full h-10 p-2 text-sm text-dark block border-2 border-slate-900 rounded-md focus:outline-none focus:border-primary"
                             autocomplete="off" required>
                     </div>
                     <div class="input-label mb-8">
                         <label for="deskripsi" class="text-sm text-big_secondary">Deskripsi</label>
                         <textarea name="deskripsi" id="deskripsi" cols="30" rows="10"
-                            class="w-full p-2 text-sm block border-2 border-slate-900 rounded-md focus:outline-none focus:border-primary"
+                            class="w-full p-2 text-sm text-dark block border-2 border-slate-900 rounded-md focus:outline-none focus:border-primary"
                             autocomplete="off" required></textarea>
                     </div>
                     <div class="tbl-kirim mb-8 xl:flex xl:justify-end">
                         <button id="satu" type="submit"
-                            class="w-full text-center capitalize bg-primary px-4 py-2 rounded-lg transition duration-300 hover:bg-secondary_dark xl:w-1/5 hover:text-white">
+                            class="w-full text-center text-dark capitalize bg-primary px-4 py-2 rounded-lg transition duration-300 hover:bg-secondary_dark xl:w-1/5 hover:text-white">
                             kirim
                         </button>
                         <button id="dua" type="button"
@@ -270,10 +270,10 @@
     <!-- Kontak Section End -->
 
     <!-- Footer Start -->
-    <footer id="footer">
-        <div class="h-[60px] border-2 border-dark text-center">
+    <footer id="footer bg-white">
+        <div class="h-[60px] border-2 border-dark text-center text-dark">
             <p class="text-sm mt-4">&copy; Copyright 2022 - <a href="https://github.com/senyumpanda" target="_blank"
-                    class="text-primary transition hover:italic">senyumpanda</a></p>
+                    class="text-primary text-dark transition hover:italic">senyumpanda</a></p>
         </div>
     </footer>
     <!-- Footer End -->
